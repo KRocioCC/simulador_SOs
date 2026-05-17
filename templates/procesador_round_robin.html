@@ -1,0 +1,40 @@
+<h2>Algoritmo de planificación de procesos: Round Robin</h2>
+<p class="resumen">
+  Round Robin asigna a cada proceso un tiempo máximo (quantum). Si no termina, se envía al final de la cola.
+  Es expropiativo y justo. Fórmulas: <b>T = tf - tll</b>, <b>E = T - t</b>, <b>I = T / t</b>.
+</p>
+
+<div class="panel-entrada">
+  <div class="campo">
+    <label for="numero-procesos">Número de procesos / peticiones</label>
+    <input id="numero-procesos" type="number" min="1" max="10" value="5" />
+  </div>
+  <div class="campo">
+    <label for="texto-procesos">Ingresar procesos (formato: nombre, tll, t)</label>
+    <textarea id="texto-procesos" rows="7">A,0,3
+B,0,6
+C,0,4
+D,0,5
+E,0,2</textarea>
+  </div>
+</div>
+
+<div class="campo rr-campo">
+  <label for="quantum">Quantum</label>
+  <input id="quantum" type="number" min="1" value="2" />
+</div>
+
+<div class="acciones">
+  <button id="btn-ejemplo" class="secundario">Cargar ejemplo</button>
+  <button id="btn-ejecutar" class="primario">▶️ EJECUTAR SIMULACIÓN</button>
+  <button id="btn-exportar" class="secundario" disabled>Exportar a CSV</button>
+</div>
+
+<div id="paso-contenedor" class="paso-contenedor oculto">
+  <label for="slider-pasos">Paso a paso (instante)</label>
+  <input id="slider-pasos" type="range" min="1" max="1" value="1" />
+  <span id="valor-paso">1</span>
+</div>
+
+<div id="gantt-wrap" class="gantt-wrap"></div>
+<div id="tabla-wrap"></div>

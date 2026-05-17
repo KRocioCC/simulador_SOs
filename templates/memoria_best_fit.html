@@ -1,0 +1,30 @@
+<h2>Asignación de memoria: Best Fit</h2>
+<p class="resumen">
+  Best Fit busca la partición libre de menor tamaño que sea suficiente. Minimiza fragmentación pero es más lento.
+</p>
+
+<div class="panel-entrada">
+  <div class="campo">
+    <label for="num-memoria">Número de procesos / peticiones</label>
+    <input id="num-memoria" type="number" min="1" max="10" value="5" />
+  </div>
+  <div class="campo">
+    <label for="solicitudes-memoria">Procesos (formato: nombre,tamaño)</label>
+    <textarea id="solicitudes-memoria" rows="7">P1,212
+P2,417
+P3,112
+P4,426
+P5,95</textarea>
+  </div>
+</div>
+
+<div class="campo rr-campo">
+  <label for="particiones-memoria">Particiones (coma separada)</label>
+  <input id="particiones-memoria" type="text" value="100,500,200,300,600" />
+</div>
+
+<div class="acciones">
+  <button id="btn-ejecutar-memoria" class="primario">▶️ EJECUTAR SIMULACIÓN</button>
+</div>
+
+<div id="resultado-memoria"></div>

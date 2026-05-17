@@ -1,0 +1,6 @@
+.__pycache__/
+*.pyc
+graficas/*.png
+resultados/*.txt
+.DS_Store
+.venv/

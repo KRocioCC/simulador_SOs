@@ -1,0 +1,21 @@
+<h2>E/S: C-SCAN</h2>
+<p class="resumen">
+  C-SCAN (Circular SCAN) mueve el cabezal en un sentido, saltando al inicio cuando llega al final. Proporciona servicio más uniforme.
+</p>
+
+<div class="panel-entrada">
+  <div class="campo">
+    <label for="cabeza-es">Cabeza inicial</label>
+    <input id="cabeza-es" type="number" min="0" value="53" />
+  </div>
+  <div class="campo">
+    <label for="solicitudes-es">Solicitudes de cilindros (coma separada)</label>
+    <input id="solicitudes-es" type="text" value="98,183,37,122,14,124,65,67" />
+  </div>
+</div>
+
+<div class="acciones">
+  <button id="btn-ejecutar-es" class="primario">▶️ EJECUTAR SIMULACIÓN</button>
+</div>
+
+<div id="resultado-es"></div>

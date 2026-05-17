@@ -1,0 +1,21 @@
+<h2>Disco: LOOK</h2>
+<p class="resumen">
+  LOOK es similar a SCAN pero no va hasta el extremo del disco, se detiene cuando no hay más solicitudes en esa dirección.
+</p>
+
+<div class="panel-entrada">
+  <div class="campo">
+    <label for="cabeza-disco">Cabeza inicial</label>
+    <input id="cabeza-disco" type="number" min="0" value="53" />
+  </div>
+  <div class="campo">
+    <label for="solicitudes-disco">Solicitudes de cilindros (coma separada)</label>
+    <input id="solicitudes-disco" type="text" value="98,183,37,122,14,124,65,67" />
+  </div>
+</div>
+
+<div class="acciones">
+  <button id="btn-ejecutar-disco" class="primario">▶️ EJECUTAR SIMULACIÓN</button>
+</div>
+
+<div id="resultado-disco"></div>

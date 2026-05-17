@@ -1,0 +1,35 @@
+<h2>Algoritmo de planificación de procesos: FCFS (First Come, First Served)</h2>
+<p class="resumen">
+  FCFS atiende los procesos en el orden en que llegan a la cola. Es no expropiativo: una vez que un proceso comienza,
+  termina su ráfaga antes de ceder CPU. Fórmulas: <b>T = tf - tll</b>, <b>E = T - t</b>, <b>I = T / t</b>.
+</p>
+
+<div class="panel-entrada">
+  <div class="campo">
+    <label for="numero-procesos">Número de procesos / peticiones</label>
+    <input id="numero-procesos" type="number" min="1" max="10" value="5" />
+  </div>
+  <div class="campo">
+    <label for="texto-procesos">Ingresar procesos (formato: nombre, tll, t)</label>
+    <textarea id="texto-procesos" rows="7">A,0,3
+B,0,6
+C,0,4
+D,0,5
+E,0,2</textarea>
+  </div>
+</div>
+
+<div class="acciones">
+  <button id="btn-ejemplo" class="secundario">Cargar ejemplo</button>
+  <button id="btn-ejecutar" class="primario">▶️ EJECUTAR SIMULACIÓN</button>
+  <button id="btn-exportar" class="secundario" disabled>Exportar a CSV</button>
+</div>
+
+<div id="paso-contenedor" class="paso-contenedor oculto">
+  <label for="slider-pasos">Paso a paso (instante)</label>
+  <input id="slider-pasos" type="range" min="1" max="1" value="1" />
+  <span id="valor-paso">1</span>
+</div>
+
+<div id="gantt-wrap" class="gantt-wrap"></div>
+<div id="tabla-wrap"></div>
